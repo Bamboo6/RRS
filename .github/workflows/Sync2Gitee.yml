@@ -1,0 +1,19 @@
+name: syncToGitee
+on:
+  push:
+    branches:
+      - main
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mirror the Github organization repos to Gitee.
+        uses: Bamboo6/hub-mirror-action@master
+        with:
+          src: 'github/Bamboo6'
+          dst: 'gitee/LauTou'
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token:  ${{ secrets.GITEE_TOKEN }}
+          static_list: "RSS"
+          force_update: true
+          debug: true
