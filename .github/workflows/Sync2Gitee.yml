@@ -14,6 +14,6 @@ jobs:
           dst: 'gitee/LauTou'
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token:  ${{ secrets.GITEE_TOKEN }}
-          static_list: "RSS"
+          static_list: "RRS"
           force_update: true
           debug: true
