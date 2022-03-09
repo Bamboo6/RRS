@@ -12,7 +12,7 @@ jobs:
         uses: Bamboo6/hub-mirror-action@master
         with:
           src: 'github/Bamboo6'
-          dst: 'gitee/LauTou'
+          dst: 'gitee/TouLau'
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token:  ${{ secrets.GITEE_TOKEN }}
           static_list: "RRS"
